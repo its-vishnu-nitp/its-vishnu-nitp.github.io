@@ -178,6 +178,25 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
 .contact-card strong { display: block; font-size: 0.95rem; }
 .contact-card span { color: var(--muted); font-size: 0.88rem; word-break: break-all; }
 
+/* ---------- contact form (backend: FormSubmit) ---------- */
+.contact-form { padding: 2rem; margin-top: 1.6rem; display: grid; gap: 1rem; }
+.contact-form h3 { font-size: 1.15rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 0.85rem 1.1rem; border-radius: 12px;
+  background: rgba(255,255,255,.05); border: 1px solid var(--glass-border);
+  color: var(--text); font-family: var(--font); font-size: 0.95rem; resize: vertical;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--muted); }
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2);
+}
+.contact-form .btn:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.honeypot { display: none !important; }
+.form-status { font-size: 0.9rem; min-height: 1.4em; margin: 0; }
+.form-status.ok { color: #34d399; }
+.form-status.err { color: #f87171; }
+
 /* ---------- footer ---------- */
 footer { text-align: center; padding: 3.5rem 1rem 2.2rem; color: var(--muted); font-size: 0.88rem; }
 footer a { color: var(--accent-2); }

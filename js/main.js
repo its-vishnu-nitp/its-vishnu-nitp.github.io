@@ -130,4 +130,50 @@
     menuBtn.setAttribute('aria-expanded', open);
   });
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  /* ---------- contact form (backend: FormSubmit AJAX, no server needed) ---------- */
+  const form = document.getElementById('contactForm');
+  if (form) {
+    const status = document.getElementById('formStatus');
+    const btn = document.getElementById('sendBtn');
+    const els = form.elements;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (els['_honey'].value) return; // bot trap
+      const name = els['name'].value.trim();
+      const email = els['email'].value.trim();
+      const message = els['message'].value.trim();
+      if (!name || !email || !message) {
+        status.textContent = 'Please fill in all fields.';
+        status.className = 'form-status err';
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      status.textContent = '';
+      status.className = 'form-status';
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/vishnuvishwakarma6387@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name, email, message,
+            _subject: 'Portfolio contact from ' + name,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
+        if (!res.ok) throw new Error('send failed');
+        status.textContent = 'Message sent! I\'ll get back to you soon.';
+        status.className = 'form-status ok';
+        form.reset();
+      } catch (err) {
+        status.textContent = 'Could not send — email me directly at vishnuvishwakarma6387@gmail.com';
+        status.className = 'form-status err';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+      }
+    });
+  }
 })();

@@ -255,9 +255,17 @@
           <div><strong>GitHub</strong><span>@its-vishnu-nitp</span></div>
         </a>
       </div>
-      <div class="hero-cta reveal" style="margin-top:2rem">
-        <a class="btn btn-primary" href="mailto:vishnuvishwakarma6387@gmail.com?subject=Internship%20Opportunity">Say Hello</a>
-      </div>
+      <form class="contact-form glass reveal" id="contactForm" novalidate>
+        <h3>Send a message</h3>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+          <input type="email" name="email" placeholder="Your email" required autocomplete="email" />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div><button class="btn btn-primary" type="submit" id="sendBtn">Send Message</button></div>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
     </section>
   </main>
 

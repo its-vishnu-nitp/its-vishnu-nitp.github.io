@@ -33,6 +33,17 @@ layouts that collapse gracefully (3-col → 2-col → 1-col), and
 3. IntersectionObserver scroll-reveals, 4. eased stat counters,
 5. active-nav tracking + subtle 3D card tilt + mobile menu.
 
+## Backend (contact form)
+
+The contact form needs no server of its own. Submissions go through
+FormSubmit's AJAX endpoint (`https://formsubmit.co/ajax/…`) straight to the
+inbox — a serverless form backend, so the site stays 100% static and
+hostable anywhere (GitHub Pages included). Includes a honeypot field
+against bots, client-side validation, and inline success/error states.
+
+> One-time setup: the first-ever submission triggers an activation email —
+> click it once, and every later message lands directly in the inbox.
+
 ## Why this stack
 
 - **Speed** — a single HTML file + one CSS + one JS file; loads in milliseconds.

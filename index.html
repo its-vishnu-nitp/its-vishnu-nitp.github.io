@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vishnu Kumar — Final-year Dual Degree CSE (Data Science) student at NIT Patna. SDE & Full-Stack Developer, LeetCode Knight. Portfolio of projects, research and coding profiles." />
+  <title>Vishnu Kumar — SDE & Full-Stack Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'>VK</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#home" aria-label="Vishnu Kumar home"><span class="logo-mark">VK</span><span class="logo-text">vishnu<span class="accent">.dev</span></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#profiles">Coding</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-small" href="https://drive.google.com/file/d/1mGErendtUETDEtfGdmp5SKXpAol45rTq/view" target="_blank" rel="noopener">Resume</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal">👋 Hello, I'm</p>
+        <h1 class="hero-name reveal">Vishnu <span class="gradient-text">Kumar</span></h1>
+        <p class="hero-role reveal"><span class="typed-prefix">&gt;_</span> <span id="typed"></span><span class="caret">▍</span></p>
+        <p class="hero-sub reveal">Final-year Dual Degree (B.Tech + M.Tech) CSE student at <strong>NIT Patna</strong>, graduating 2027 with a CGPA of <strong>8.19/10</strong>. I build full-stack web apps, solve hard DSA problems, and research adversarial ML.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-count="1898">0</span><span class="stat-label">LeetCode max rating</span></div>
+          <div class="stat"><span class="stat-num" data-count="1000" data-suffix="+">0</span><span class="stat-label">DSA + SQL problems</span></div>
+          <div class="stat"><span class="stat-num" data-count="8.19" data-decimals="1">0</span><span class="stat-label">CGPA / 10</span></div>
+          <div class="stat"><span class="stat-num" data-count="4" data-suffix="+">0</span><span class="stat-label">Major projects</span></div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about">↓</a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section-title reveal"><span class="section-num">01</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="avatar">VK</div>
+          <h3>Vishnu Kumar</h3>
+          <p class="muted">SDE & Full-Stack Developer · ML Explorer</p>
+          <p>I mostly work in <strong>C++ and Python</strong>, spend most of my time on <strong>DSA and problem solving</strong>, and build web apps with the <strong>MERN stack</strong>. Currently looking for <strong>SDE / Full-Stack internship</strong> opportunities where I can learn fast and ship real things.</p>
+          <div class="social-row">
+            <a href="https://github.com/its-vishnu-nitp" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/vishnu-kumar-nitp018/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://leetcode.com/u/Vishnuk_018/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+          </div>
+        </div>
+        <ul class="fact-list">
+          <li class="glass reveal"><span class="fact-key">Degree</span><span class="fact-val">Dual Degree B.Tech + M.Tech, CSE (Data Science)</span></li>
+          <li class="glass reveal"><span class="fact-key">College</span><span class="fact-val">National Institute of Technology Patna</span></li>
+          <li class="glass reveal"><span class="fact-key">Duration</span><span class="fact-val">Nov 2022 → Jun 2027</span></li>
+          <li class="glass reveal"><span class="fact-key">CGPA</span><span class="fact-val">8.19 / 10</span></li>
+          <li class="glass reveal"><span class="fact-key">Location</span><span class="fact-val">Patna, Bihar, India</span></li>
+          <li class="glass reveal"><span class="fact-key">Open to</span><span class="fact-val">SDE · Full-Stack · Backend · ML internships</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><span class="section-num">02</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="tags"><span>C++</span><span>Python</span><span>JavaScript</span><span>C</span><span>SQL</span></div>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">🌐</div>
+          <h3>Web & Backend</h3>
+          <div class="tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>Tailwind CSS</span><span>Bootstrap</span></div>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="tags"><span>MySQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">🤖</div>
+          <h3>AI / ML</h3>
+          <div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>PyTorch</span><span>Transformers</span><span>scikit-learn</span></div>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">🧠</div>
+          <h3>CS Core</h3>
+          <div class="tags"><span>Data Structures & Algorithms</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span></div>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Linux</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal"><span class="section-num">03</span> Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card glass reveal" data-tilt>
+          <div class="project-top"><span class="project-emoji">🏠</span><span class="project-badge">Full-Stack</span></div>
+          <h3>HouseHelp Connect</h3>
+          <p>A marketplace for home services — households find, book and pay local workers (cleaning, cooking, plumbing, childcare), and workers find jobs on it. Role-based login with JWT, Aadhaar/PAN verification for workers, bookings, messaging, reviews and a demo payment flow.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Tailwind</span><span>JWT</span></div>
+          <div class="project-links"><a href="https://house-help-connect-one.vercel.app/" target="_blank" rel="noopener">🔗 Live Demo</a><a href="https://github.com/its-vishnu-nitp/house-help-connect" target="_blank" rel="noopener">💻 Code</a></div>
+        </article>
+        <article class="project-card glass reveal" data-tilt>
+          <div class="project-top"><span class="project-emoji">❓</span><span class="project-badge">NLP</span></div>
+          <h3>Extractive Question Answering</h3>
+          <p>Question answering with <strong>DistilBERT</strong> fine-tuned on <strong>SQuAD</strong> — reaching <strong>70.86 EM / 84.10 F1</strong> on the validation set.</p>
+          <div class="tags"><span>Python</span><span>PyTorch</span><span>Transformers</span><span>DistilBERT</span></div>
+          <div class="project-links"><a href="https://github.com/its-vishnu-nitp/stanford-question-answering-system" target="_blank" rel="noopener">💻 Code</a></div>
+        </article>
+        <article class="project-card glass reveal" data-tilt>
+          <div class="project-top"><span class="project-emoji">🛒</span><span class="project-badge">Recommender</span></div>
+          <h3>Next Basket Item Prediction</h3>
+          <p>A hybrid recommendation system combining <strong>association rule mining</strong> and <strong>contrastive learning</strong>, integrated into a Transformer-based <strong>SASRec</strong> model for sequential next-item prediction.</p>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>PyTorch</span></div>
+          <div class="project-links"><a href="https://github.com/its-vishnu-nitp/next-basket-item-prediction-using-AR-and-CL" target="_blank" rel="noopener">💻 Code</a></div>
+        </article>
+        <article class="project-card glass reveal" data-tilt>
+          <div class="project-top"><span class="project-emoji">📸</span><span class="project-badge">Frontend</span></div>
+          <h3>Celebrare Photo Gallery</h3>
+          <p>Responsive photo gallery with live author search and favourites persisted in localStorage.</p>
+          <div class="tags"><span>React</span><span>Vite</span><span>Tailwind CSS</span></div>
+          <div class="project-links"><a href="https://its-vishnu-nitp.github.io/celebrare-photo-gallery/" target="_blank" rel="noopener">🔗 Live Demo</a><a href="https://github.com/its-vishnu-nitp/celebrare-photo-gallery" target="_blank" rel="noopener">💻 Code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research">
+      <h2 class="section-title reveal"><span class="section-num">04</span> Research</h2>
+      <div class="research-panel glass reveal">
+        <div class="research-head">
+          <span class="project-emoji">🛡️</span>
+          <div>
+            <h3>RL Agent for Adversarial Robustness of ML Malware Detectors</h3>
+            <p class="muted">Dual-degree research project · NIT Patna · Supervisor: Dr. Jyoti Prakash Singh</p>
+          </div>
+          <span class="project-badge">In progress · design phase</span>
+        </div>
+        <p>An RL agent learns <strong>functionality-preserving PE transformation sequences</strong> that flip a static ML malware detector from malicious → benign — measuring how robust the detector really is. Success is measured by <strong>ERFP</strong> (evasion rate with functionality preservation).</p>
+        <ol class="pipeline">
+          <li><strong>Oracle</strong><span>frozen EMBER-style GBDT as the score oracle</span></li>
+          <li><strong>Policy</strong><span>shared RL policy, ~10 actions / episode</span></li>
+          <li><strong>Budget</strong><span>~50 detector queries / sample</span></li>
+          <li><strong>Safety</strong><span>isolated lab sandbox validation</span></li>
+          <li><strong>Transfer</strong><span>MalConv reserved for transfer tests</span></li>
+        </ol>
+        <p class="muted small">Workflow: design-first — system designed step by step (scope → dataset/oracle → state representation → action space → …), code only after design sign-off.</p>
+      </div>
+    </section>
+
+    <!-- ============ CODING PROFILES ============ -->
+    <section class="section" id="profiles">
+      <h2 class="section-title reveal"><span class="section-num">05</span> Coding Profiles</h2>
+      <div class="profiles-grid">
+        <a class="profile-card glass reveal" data-tilt href="https://leetcode.com/u/Vishnuk_018/" target="_blank" rel="noopener">
+          <div class="profile-platform">LeetCode</div>
+          <div class="profile-rating">Knight · 1898</div>
+          <div class="profile-sub">1000+ DSA & SQL problems solved</div>
+        </a>
+        <a class="profile-card glass reveal" data-tilt href="https://www.codechef.com/users/vishnunitp018" target="_blank" rel="noopener">
+          <div class="profile-platform">CodeChef</div>
+          <div class="profile-rating">3-Star · 1610</div>
+          <div class="profile-sub">Competitive programming</div>
+        </a>
+        <a class="profile-card glass reveal" data-tilt href="https://codeforces.com/profile/Vishnu_nitp" target="_blank" rel="noopener">
+          <div class="profile-platform">Codeforces</div>
+          <div class="profile-rating">Pupil · 1244</div>
+          <div class="profile-sub">Rated contests</div>
+        </a>
+        <a class="profile-card glass reveal" data-tilt href="https://www.geeksforgeeks.org/profile/vishnuvishwmtdw" target="_blank" rel="noopener">
+          <div class="profile-platform">GeeksforGeeks</div>
+          <div class="profile-rating">480+ problems</div>
+          <div class="profile-sub">DSA practice</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <h2 class="section-title reveal"><span class="section-num">06</span> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">Nov 2022 → Jun 2027</span>
+            <h3>National Institute of Technology Patna</h3>
+            <p>Dual Degree (B.Tech + M.Tech) — Computer Science & Engineering, specialising in Data Science · <strong>CGPA 8.19/10</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">2020</span>
+            <h3>Class XII — 81.66%</h3>
+            <p>Higher secondary education</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">2018</span>
+            <h3>Class X — 89.33%</h3>
+            <p>Secondary education</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <h2 class="section-title reveal"><span class="section-num">07</span> Get in Touch</h2>
+      <p class="contact-sub reveal">I'm looking for SDE / Full-Stack internship opportunities. My inbox is always open — I'll get back to you quickly.</p>
+      <div class="contact-grid">
+        <a class="contact-card glass reveal" data-tilt href="mailto:vishnuvishwakarma6387@gmail.com">
+          <div class="contact-icon">✉️</div>
+          <div><strong>Email</strong><span>vishnuvishwakarma6387@gmail.com</span></div>
+        </a>
+        <a class="contact-card glass reveal" data-tilt href="tel:+916387910586">
+          <div class="contact-icon">📞</div>
+          <div><strong>Phone</strong><span>+91 63879 10586</span></div>
+        </a>
+        <a class="contact-card glass reveal" data-tilt href="https://www.linkedin.com/in/vishnu-kumar-nitp018/" target="_blank" rel="noopener">
+          <div class="contact-icon">💼</div>
+          <div><strong>LinkedIn</strong><span>/in/vishnu-kumar-nitp018</span></div>
+        </a>
+        <a class="contact-card glass reveal" data-tilt href="https://github.com/its-vishnu-nitp" target="_blank" rel="noopener">
+          <div class="contact-icon">🐙</div>
+          <div><strong>GitHub</strong><span>@its-vishnu-nitp</span></div>
+        </a>
+      </div>
+      <div class="hero-cta reveal" style="margin-top:2rem">
+        <a class="btn btn-primary" href="mailto:vishnuvishwakarma6387@gmail.com?subject=Internship%20Opportunity">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed & built by <strong>Vishnu Kumar</strong> · © 2026 · <a href="https://github.com/its-vishnu-nitp/its-vishnu-nitp.github.io" target="_blank" rel="noopener">Source</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
